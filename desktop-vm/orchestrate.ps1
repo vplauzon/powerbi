@@ -1,6 +1,6 @@
 echo "Disable IE ESC"
 
-./disable-ie-esc.ps1
+powershell -ExecutionPolicy Unrestricted -File ./disable-ie-esc.ps1
 
 echo "Install Power BI"
 
