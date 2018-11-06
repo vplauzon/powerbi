@@ -199,17 +199,17 @@
                             ]
                         },
                         "protectedSettings": {
-                            "commandToExecute": "[concat('script.bat ', parameters('Thread Count'), ' 10 \"', parameters('Metrics Container URL'), '\" \"', parameters('Metrics Container SAS Token'), '\"')]"
+                            "commandToExecute": "orchestrate.ps1"
                         }
                     },
                     "dependsOn": [
-                        "[resourceId('Microsoft.Compute/virtualMachines', concat(variables('VM Prefix'), '-', copyIndex()))]"
+                        "[resourceId('Microsoft.Compute/virtualMachines', 'vm')]"
                     ]
                 }
             ],
             "dependsOn": [
-                "[resourceId('Microsoft.Network/networkInterfaces', concat(variables('NIC Prefix'), '-', copyIndex()))]",
-                "[resourceId('Microsoft.Network/publicIPAddresses', concat(variables('IP Prefix'), '-', copyIndex()))]"
+                "[resourceId('Microsoft.Network/networkInterfaces', 'vm-nic')]",
+                "[resourceId('Microsoft.Network/publicIPAddresses', 'vm-ip')]"
             ]
         }
     ],
