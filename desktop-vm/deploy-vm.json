@@ -10,10 +10,6 @@
             "defaultValue": null,
             "type": "securestring"
         },
-        "IP Domain Name Label": {
-            "defaultValue": null,
-            "type": "string"
-        },
         "VM Size": {
             "defaultValue": "Standard_DS2_v2",
             "type": "string",
@@ -110,10 +106,7 @@
             "tags": {},
             "properties": {
                 "publicIPAllocationMethod": "Dynamic",
-                "idleTimeoutInMinutes": 4,
-                "dnsSettings": {
-                    "domainNameLabel": "[parameters('IP Domain Name Label')]"
-                }
+                "idleTimeoutInMinutes": 4
             }
         },
         {
