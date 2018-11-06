@@ -199,7 +199,7 @@
                             ]
                         },
                         "protectedSettings": {
-                            "commandToExecute": "orchestrate.ps1"
+                            "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File orchestrate.ps1"
                         }
                     },
                     "dependsOn": [
