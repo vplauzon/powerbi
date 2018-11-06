@@ -195,7 +195,8 @@
                         "settings": {
                             "fileUris": [
                                 "https://raw.githubusercontent.com/vplauzon/powerbi/master/desktop-vm/orchestrate.ps1",
-                                "https://raw.githubusercontent.com/vplauzon/powerbi/master/desktop-vm/disable-ie-esc.ps1"
+                                "https://raw.githubusercontent.com/vplauzon/powerbi/master/desktop-vm/disable-ie-esc.ps1",
+                                "https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop_x64.msi"
                             ]
                         },
                         "protectedSettings": {
